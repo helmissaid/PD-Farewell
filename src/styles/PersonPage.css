@@ -1,0 +1,135 @@
+/* PersonPage styles */
+.person-canvas-page {
+  min-height: 100vh;
+  position: relative;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas-dot-grid-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: #FFFFFF;
+  background-image: radial-gradient(circle, #E5E5E5 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Floating Navbar */
+.floating-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.back-link {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+}
+
+.back-link:hover {
+  color: var(--color-accent-blue);
+}
+
+.back-arrow {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+/* Canvas Content */
+.canvas-content {
+  position: relative;
+  z-index: 1;
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.profile-header-new {
+  margin-bottom: 60px;
+}
+
+/* Impressions Section */
+.impressions-section {
+  margin-top: 48px;
+}
+
+.section-label {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 32px;
+  color: var(--color-text-primary);
+}
+
+/* Impressions Masonry-like Grid */
+.impressions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 32px;
+  justify-content: center;
+  padding: 48px 0 80px 0;
+}
+
+/* Dashed Frame Decor */
+.dashed-frame {
+  position: absolute;
+  border: 1px dashed var(--color-text-secondary);
+  opacity: 0.3;
+  pointer-events: none;
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.ornament {
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  font-size: 1.5rem;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+@media (max-width: 1024px) {
+  .impressions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+    padding: 16px 20px;
+  }
+  
+  .profile-card {
+    padding: 24px;
+    margin: 20px auto;
+  }
+  
+  .impressions-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}

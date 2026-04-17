@@ -39,6 +39,12 @@
   margin: 0 auto;
 }
 
+.nav-logo {
+  height: 32px;
+  width: auto;
+  opacity: 0.9;
+}
+
 .back-link {
   color: var(--color-text-primary);
   text-decoration: none;

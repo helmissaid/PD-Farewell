@@ -1,10 +1,11 @@
 /* HomePage styles */
 .home-container {
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 /* Sublte Dot Grid Background */
@@ -20,23 +21,22 @@
   opacity: 0.3;
 }
 
-/* Header */
-.page-header {
-  padding: 40px 0;
+/* Logo */
+.logo-container {
+  margin-bottom: 24px;
   display: flex;
   justify-content: center;
 }
 
-.header-team-name {
-  font-family: var(--font-serif);
-  font-size: 1.25rem;
-  letter-spacing: 0.05em;
-  opacity: 0.8;
+.editorial-logo {
+  height: 48px;
+  width: auto;
+  opacity: 0.9;
 }
 
 /* Main Content */
 .main-content {
-  flex: 1;
+  flex: 0;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
@@ -46,8 +46,8 @@
 /* Hero Editorial Section */
 .hero-editorial {
   text-align: center;
-  padding-top: 15vh;
-  padding-bottom: 8vh;
+  padding-top: 0;
+  padding-bottom: 4vh;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -64,7 +64,7 @@
 
 .hero-heading-centered {
   font-family: var(--font-serif);
-  font-size: clamp(32px, 5vw, 56px);
+  font-size: clamp(24px, 4vw, 42px);
   font-weight: 700;
   line-height: 1.3;
   color: #1A1A1A;
@@ -74,8 +74,8 @@
 
 /* Cards Section */
 .cards-section {
-  margin-top: 40px;
-  padding-bottom: 100px;
+  margin-top: 20px;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,13 +85,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 48px;
+  gap: 32px;
   flex-wrap: wrap;
 }
 
 /* Footer */
 .page-footer {
-  padding: 40px;
+  padding: 20px;
   text-align: center;
 }
 

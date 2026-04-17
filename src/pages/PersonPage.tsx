@@ -30,7 +30,12 @@ const PersonPage: React.FC = () => {
           <Link to="/" className="back-link">
             <span className="back-arrow">←</span> Back to Home
           </Link>
-          <h2 className="header-team-name">Product Design Sekolah.mu</h2>
+          <img 
+            src="https://drive.google.com/thumbnail?id=1iBotPuvrX70OM3d-Zj_S5lESStpfMt8j&sz=w1000" 
+            alt="Sekolah.mu Logo" 
+            className="nav-logo"
+            referrerPolicy="no-referrer"
+          />
         </div>
       </nav>
       

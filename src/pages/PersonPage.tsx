@@ -28,7 +28,8 @@ const PersonPage: React.FC = () => {
       <nav className="floating-navbar">
         <div className="nav-content">
           <Link to="/" className="back-link">
-            <span className="back-arrow">←</span> Back to start
+            <span className="back-arrow">←</span> 
+            <span className="back-link-text">Back to start</span>
           </Link>
           <img 
             src="https://drive.google.com/thumbnail?id=1iBotPuvrX70OM3d-Zj_S5lESStpfMt8j&sz=w1000" 

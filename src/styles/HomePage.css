@@ -1,8 +1,8 @@
 /* HomePage styles */
 .home-container {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,12 +64,13 @@
 
 .hero-heading-centered {
   font-family: var(--font-serif);
-  font-size: clamp(24px, 4vw, 42px);
+  font-size: clamp(20px, 4vw, 42px);
   font-weight: 700;
   line-height: 1.3;
   color: #1A1A1A;
   text-align: center;
   margin: 0 auto;
+  max-width: 90%;
 }
 
 /* Cards Section */
@@ -101,11 +102,24 @@
 }
 
 @media (max-width: 768px) {
-  .hero-heading {
-    font-size: 2.25rem;
+  .home-container {
+    padding: 40px 0;
+    justify-content: flex-start;
+  }
+
+  .main-content {
+    padding: 0 20px;
+  }
+
+  .hero-heading-centered {
+    font-size: 24px;
   }
   
   .cards-wrapper {
-    gap: 32px;
+    gap: 24px;
+  }
+
+  .editorial-logo {
+    height: 36px;
   }
 }

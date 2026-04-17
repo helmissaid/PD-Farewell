@@ -66,7 +66,7 @@
 
 .header-full-name {
   font-family: var(--font-serif);
-  font-size: 42px;
+  font-size: clamp(28px, 5vw, 42px);
   font-weight: 800;
   color: #1A1A1A;
   margin-bottom: 8px;
@@ -199,6 +199,19 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 32px;
+    gap: 24px;
+  }
+
+  .header-role {
+    font-size: 16px;
+  }
+
+  .header-year {
+    font-size: 14px;
+  }
+
+  .impression-card {
+    width: 100%;
+    min-height: auto;
   }
 }

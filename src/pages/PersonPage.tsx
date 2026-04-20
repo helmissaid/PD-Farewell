@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import { people } from '../data/people';
 import ProfileHeader from '../components/ProfileHeader';
 import ImpressionCard from '../components/ImpressionCard';
+import VinylPlayer from '../components/VinylPlayer';
 import '../styles/PersonPage.css';
 
 const PersonPage: React.FC = () => {
@@ -40,7 +41,12 @@ const PersonPage: React.FC = () => {
         </div>
       </nav>
       
-      <main className="canvas-content">
+      <main className="canvas-content" style={{ paddingTop: '100px' }}>
+        {/* Music Button integrated above the photo */}
+        <div style={{ marginBottom: '-20px' }}>
+          <VinylPlayer />
+        </div>
+
         {/* Profile Content (Ungrouped from Card) */}
         <ProfileHeader 
           fullName={person.fullName}

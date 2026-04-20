@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import PhotoCard from '../components/PhotoCard';
+import VinylPlayer from '../components/VinylPlayer';
 import { people } from '../data/people';
 import '../styles/HomePage.css';
 
@@ -26,10 +27,13 @@ const HomePage: React.FC = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
           >
-            Thank you for being part of the story. <br />
-            The memories we made with you will stay with us.
+            Thank You For Being Part Of The Story <br />
+            The Memories We Made With You Will Stay With Us
           </motion.h1>
         </section>
+
+        {/* Vinyl Player integrated between text and photos */}
+        <VinylPlayer />
 
         <section className="cards-section">
           <div className="cards-wrapper">

@@ -28,12 +28,17 @@ const PhotoCard: React.FC<PhotoCardProps> = ({ id, nickname, rotation, photoUrl 
     >
       <div className="photo-container">
         {photoUrl ? (
-          <img 
-            src={photoUrl} 
-            alt={nickname} 
-            referrerPolicy="no-referrer"
-            className="photo-img"
-          />
+          <>
+            <img 
+              src={photoUrl} 
+              alt={nickname} 
+              referrerPolicy="no-referrer"
+              className="photo-img"
+            />
+            <div className="photo-overlay">
+              <span className="overlay-text">About Me at SID</span>
+            </div>
+          </>
         ) : (
           <div className="photo-placeholder-fill"></div>
         )}

@@ -1,10 +1,10 @@
 /* PhotoCard (Polaroid) styles */
 .photo-card {
-  width: 200px;
+  width: 240px;
   background-color: #FFFFFF;
   border: none;
   border-radius: 4px;
-  padding: 12px 12px 48px 12px;
+  padding: 14px 14px 56px 14px;
   box-shadow: 
     0 4px 6px rgba(0,0,0,0.08), 
     0 12px 24px rgba(0,0,0,0.06),
@@ -33,12 +33,44 @@
   display: block;
 }
 
+.photo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+.photo-card:hover .photo-overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
 .card-footer {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 48px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +78,7 @@
 
 .nickname-text {
   font-family: var(--font-serif);
-  font-size: 15px;
+  font-size: 18px;
   color: #2A2A2A;
   margin-top: 10px;
   font-style: italic;
@@ -245,6 +277,104 @@
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
+}
+
+/* Fullscreen Overlay styles */
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.fullscreen-card {
+  background-color: #FFFFFF;
+  padding: 16px 16px 64px 16px;
+  border-radius: 4px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  max-width: 90vw;
+  max-height: 85vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullscreen-img {
+  max-width: 100%;
+  max-height: calc(85vh - 80px);
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.nav-chevron {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  font-size: 48px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  user-select: none;
+  margin: 0 40px;
+  backdrop-filter: blur(4px);
+  z-index: 1010;
+}
+
+.nav-chevron:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.nav-chevron.left {
+  order: -1;
+}
+
+.nav-chevron.right {
+  order: 1;
+}
+
+.nav-chevron.close-btn {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  font-size: 32px;
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  z-index: 1020;
+}
+
+@media (max-width: 1024px) {
+  .nav-chevron {
+    position: absolute;
+    bottom: 40px;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+  }
+  .nav-chevron.left { left: 40px; }
+  .nav-chevron.right { right: 40px; }
+  .nav-chevron.close-btn { 
+    top: 20px; 
+    right: 20px; 
+    width: 44px;
+    height: 44px;
+    bottom: auto;
+  }
 }
 
 @media (max-width: 768px) {

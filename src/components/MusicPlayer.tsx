@@ -52,8 +52,8 @@ export const MusicProvider: React.FC<MusicProviderProps> = ({ children }) => {
     playerInstance = new window.YT.Player('yt-player-engine', {
       videoId: '94B6MGLemik',
       playerVars: {
-        autoplay: 1,
-        mute: 1, 
+        autoplay: 0,
+        mute: 0, 
         loop: 1,
         controls: 0,
         showinfo: 0,
@@ -62,9 +62,8 @@ export const MusicProvider: React.FC<MusicProviderProps> = ({ children }) => {
         playlist: '94B6MGLemik'
       },
       events: {
-        onReady: (event: any) => {
-          event.target.playVideo();
-          // Initially muted for autoplay bypass
+        onReady: () => {
+          // No auto play
         },
         onStateChange: (event: any) => {
           setIsPlaying(event.data === window.YT.PlayerState.PLAYING);

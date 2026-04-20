@@ -90,12 +90,65 @@
 .mini-polaroid-row {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 20px;
   overflow-x: auto;
-  padding: 40px 20px 60px 20px;
+  padding: 40px 40px 80px 40px;
   align-items: flex-end;
   justify-content: center;
   scrollbar-width: none;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+.mini-polaroid-row.memories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  max-width: 1400px;
+  margin: 0 auto;
+  grid-auto-rows: auto;
+  gap: 32px;
+  overflow-x: visible;
+  padding-bottom: 80px;
+}
+
+.memo-cta-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+
+.see-more-btn {
+  font-family: var(--font-sans);
+  background-color: #FFFFFF;
+  color: #1A1A1A;
+  border: 1px solid #E5E5E5;
+  padding: 12px 32px;
+  border-radius: 99px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+.see-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-color: #D4D4D4;
+}
+
+@media (max-width: 1200px) {
+  .mini-polaroid-row.memories-grid {
+    grid-template-columns: repeat(3, 180px);
+  }
+}
+
+@media (max-width: 768px) {
+  .mini-polaroid-row.memories-grid {
+    grid-template-columns: repeat(2, 160px);
+    gap: 20px;
+  }
 }
 
 .mini-polaroid-row::-webkit-scrollbar {
@@ -103,10 +156,10 @@
 }
 
 .mini-polaroid {
-  flex: 0 0 150px;
-  width: 150px;
+  flex: 0 0 180px;
+  width: 180px;
   background-color: #FFFFFF;
-  padding: 10px 10px 32px 10px;
+  padding: 12px 12px 40px 12px;
   border-radius: 3px;
   box-shadow: 
     0 2px 4px rgba(0,0,0,0.10),

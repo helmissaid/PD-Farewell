@@ -1,5 +1,6 @@
 /**
  * Hardcoded data for the Product Design Sekolah.mu farewell website.
+ * Synchronized with Google Sheets data.
  */
 
 export const people = [
@@ -14,7 +15,14 @@ export const people = [
       "https://drive.google.com/thumbnail?id=1_Erz1J_PJEP68A3VtRTb-pAN7xe57lRA&sz=w1000",
       "https://drive.google.com/thumbnail?id=1iR6l0wZXRFnIpjU0T2EKZhu8eas1IPAn&sz=w1000",
       "https://drive.google.com/thumbnail?id=1YPZ90NaB2lrI-91JFeCouQq6wQFb7tEU&sz=w1000",
-      "https://drive.google.com/thumbnail?id=1ylsZJSHSPTjQPaVpXle4aW4R61mQko1b&sz=w1000"
+      "https://drive.google.com/thumbnail?id=1ylsZJSHSPTjQPaVpXle4aW4R61mQko1b&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1A3DUKqfaeWjcOPrUkVZ69m9rceWqbUcV&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1eb3XpAfac990m3Nt2ihMyjCpTDd2egp5&sz=w1000",
+      "https://drive.google.com/thumbnail?id=161WWbmG3xhjVNNEXyfw1ClfKen08ceN3&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1mQ46FKaTGuqS8X3CV5xSswGDI35R1jXu&sz=w1000",
+      "https://drive.google.com/thumbnail?id=180SJebE3aHlf6tqYs8JE7d6CuNrl6d_C&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1MzjBxY0jJCihYgQoQdgV1t5OIiIwLCmR&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1KJx-buthosVNdKaA4OghicuanX4En_6g&sz=w1000"
     ],
     cardRotation: -4,
     themeColor: "#E67E22",
@@ -51,25 +59,32 @@ export const people = [
       "https://drive.google.com/thumbnail?id=1r_TLUIez6Xpt7H8kO2AdHWhI-_rUcwsY&sz=w1000",
       "https://drive.google.com/thumbnail?id=1szk-txY91zPJhSPVkPAUyI2Otyp36Rlm&sz=w1000",
       "https://drive.google.com/thumbnail?id=1TZroQM0raeM6IkkDd_AsixaseybWvDmr&sz=w1000",
-      "https://drive.google.com/thumbnail?id=1xkuvxrmLYjX-O9mVwODm_iST5OEnQIkZ&sz=w1000"
+      "https://drive.google.com/thumbnail?id=1xkuvxrmLYjX-O9mVwODm_iST5OEnQIkZ&sz=w1000",
+      "https://drive.google.com/thumbnail?id=118HYi3cJMOeEF3QVz-5H63beJZvvHumX&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1Um9jKJXsv54qh2ZBoufjE1AhhJ4BclIQ&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1cKK1rre-g7Kb8iZBm1XYajcHBp1jRr0B&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1mbIPNYeNCCa0UPBlOB7RTir1uanWWbkw&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1eynhTUTJRDLwFkjbpHqkImEXx3oTi_f0&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1c_vWkpmQCJBxCrTMkU0e_USlH16KAsV5&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1mKCeJ2s59ovZnNfSJ7FeWQ1bsmL0FgiK&sz=w1000"
     ],
     cardRotation: 3,
     themeColor: "#27AE60",
     impressions: [
       { id: 1, from: "Alda", message: "Mojo selalu punya cara pandang yang fresh dan out of the box. Terinspirasi banget!" },
       { id: 2, from: "Dio", message: "Kerja bareng kamu selalu menyenangkan. Semoga sukses di petualangan berikutnya!" },
-      { id: 3, from: "Moro", message: "Terima kasih sudah jadi mentor yang sabar dan selalu mau berbagi ilmu." },
+      { id: 3, from: "Moro", message: "Terima kasih sudah jadi mentor yang sabar and selalu mau berbagi ilmu." },
       { id: 4, from: "Dimas", message: "Visual sense-mu luar biasa. Tim bakal susah cari pengganti kayak kamu." },
       { id: 5, from: "Helmi", message: "Selamat jalan Mojo! Semoga karya-karyamu makin mendunia." },
       { id: 6, from: "Agung", message: "Kamu adalah salah satu alasan kenapa aku makin cinta sama dunia desain." },
       { id: 7, from: "Fadli", message: "Terima kasih atas semua feedback konstruktifnya. Banyak banget yang aku pelajari." },
       { id: 8, from: "Ambar", message: "Bakalan kangen ngobrolin trend desain bareng sambil ngopi. Miss you already!" },
-      { id: 9, from: "Pace", message: "Dedikasi dan passion-mu dalam bekerja selalu jadi motivasi buat kita semua." },
+      { id: 9, from: "Pace", message: "Dedikasi and passion-mu dalam bekerja selalu jadi motivasi buat kita semua." },
       { id: 10, from: "Kelvin", message: "Semoga chapter baru ini membawa hal-hal indah yang sudah lama kamu impikan." },
-      { id: 11, from: "Fahri", message: "Kolaborasi bareng kamu selalu menghasilkan sesuatu yang lebih dari ekpektasi." },
+      { id: 11, from: "Fahri", message: "Kolaborasi bareng kamu selalu menghasilkan sesuatu yang lebih dari ekspektasi." },
       { id: 12, from: "Atik", message: "Good luck Mojo! Wherever you go pastikan kamu tetap jadi dirimu yang keren itu." },
       { id: 13, from: "Mubeth", message: "Lutfi semangat terus ya di tempat baru! Jangan lupain kita di sini." },
-      { id: 14, from: "Ican", message: "Terima kasih sudah jadi rekan yang sangat kooperatif dan handal." }
+      { id: 14, from: "Ican", message: "Terima kasih sudah jadi rekan yang sangat kooperatif and handal." }
     ]
   },
   {
@@ -88,14 +103,26 @@ export const people = [
       "https://drive.google.com/thumbnail?id=1cVulBy8FdwS46mxCMAm16hh15SxIA2ps&sz=w1000",
       "https://drive.google.com/thumbnail?id=1UhzZmkTgRVh3m1spKoLrPYrsXjZm5zWQ&sz=w1000",
       "https://drive.google.com/thumbnail?id=106zKwiMp0_zMt7sP-Jr0sqUhCqgGEwJ9&sz=w1000",
-      "https://drive.google.com/thumbnail?id=1y4V_zUI9JeH6oXFBiL0HNA0sPaT9NiPa&sz=w1000"
+      "https://drive.google.com/thumbnail?id=1y4V_zUI9JeH6oXFBiL0HNA0sPaT9NiPa&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1mrL0P3W9bCyBigy8fqs4Hp0G6Y_VBlql&sz=w1000",
+      "https://drive.google.com/thumbnail?id=10vIQDEqNOFjp3490fZAsrY3px-LZ2365&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1FjmZCJwXTrTpY2xRX4twm4DIVz6Fg6D_&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1KVywdYeH8ZO7gt-KaQNcI4VcFI2f8Qw1&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1oyzd05sXhXZvDGTO2oOejGjrxoGIy7cM&sz=w1000",
+      "https://drive.google.com/thumbnail?id=15d1Wg5l7t_vY8waR3vfKVtbofQFA8Wjh&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1wFTWpU3e5-iK97AUX8srHDocvXNuGX_7&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1RHKpYcGhO1dKr9sjZBHqKqlLhTobOhzS&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1hJYInY6BQ6hYszouhIKGBu05tsiHFJIG&sz=w1000",
+      "https://drive.google.com/thumbnail?id=15iYjhxxqMaR2BOC4j6-7RSIIUeG8tTS3&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1bS7XKV65kFB4ownHLiJO1Ap3wdE4HKNx&sz=w1000",
+      "https://drive.google.com/thumbnail?id=1Aa5NyECGf5rW2VphzZoM4QOaIwn0UQXt&sz=w1000"
     ],
     cardRotation: -2,
     themeColor: "#2980B9",
     impressions: [
       { id: 1, from: "Alda", message: "Desain-desainmu selalu punya sentuhan yang clean. Keren banget!" },
       { id: 2, from: "Dio", message: "Semoga karirmu makin melejit di sana. Doa terbaik buat Lutfi." },
-      { id: 3, from: "Moro", message: "Kesan saya ke Lutfi: pekerja keras dan selalu mau belajar hal baru." },
+      { id: 3, from: "Moro", message: "Kesan saya ke Lutfi: pekerja keras and selalu mau belajar hal baru." },
       { id: 4, from: "Dimas", message: "Terima kasih atas kontribusinya selama ini di Product Design tim." },
       { id: 5, from: "Helmi", message: "Dunia baru tantangan baru. Saya yakin Lutfi bisa melewatinya dengan baik." },
       { id: 6, from: "Agung", message: "Bakalan kangen kolaborasi bareng Lutfi. Good luck ya!" },

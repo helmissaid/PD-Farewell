@@ -113,7 +113,6 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({ fullName, role, year, nic
           </motion.div>
         )}
       </AnimatePresence>
-
       {hasMore && (
         <div className="memo-cta-container">
           <button 

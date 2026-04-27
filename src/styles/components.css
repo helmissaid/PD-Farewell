@@ -223,8 +223,8 @@
 
 /* ImpressionCard (Sticky Note) styles */
 .impression-card {
-  width: 220px;
-  min-height: 220px;
+  width: 280px;
+  height: auto;
   position: relative;
   padding: 24px 20px;
   box-shadow: 
@@ -237,34 +237,54 @@
   overflow: hidden;
   /* Subtle paper texture */
   background-image: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.03) 100%);
-}
-
-/* Natural curled corner effect */
-.impression-card::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 32px 32px;
-  border-color: transparent transparent rgba(0,0,0,0.05) transparent;
   transition: all 0.3s ease;
 }
 
-.impression-card:hover::after {
-  border-width: 0 0 40px 40px;
+.impression-top {
+  margin-bottom: 16px;
 }
 
 .impression-sender {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(0,0,0,0.35);
-  margin-bottom: 12px;
+  color: rgba(0,0,0,0.4);
+  margin-bottom: 8px;
   font-family: var(--font-sans);
+}
+
+.impression-tags-container {
+  margin-top: 12px;
+}
+
+.tags-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.4);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.impression-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.impression-tag {
+  font-size: 13px;
+  color: #555;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: var(--font-sans);
+}
+
+.impression-tag-item:not(:last-of-type)::after {
+  content: ",";
+  margin-right: 4px;
 }
 
 .impression-message {
@@ -273,10 +293,30 @@
   color: #2A2A2A;
   font-family: var(--font-sans);
   font-weight: 400;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
+  margin-bottom: 20px;
+}
+
+.impression-hope {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px dashed rgba(0,0,0,0.1);
+}
+
+.hope-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.4);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.hope-text {
+  font-size: 13px;
+  font-style: italic;
+  color: #555;
+  line-height: 1.4;
+  font-family: var(--font-sans);
 }
 
 /* Fullscreen Overlay styles */

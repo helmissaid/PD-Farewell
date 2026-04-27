@@ -63,7 +63,10 @@ const PersonPage: React.FC = () => {
               <ImpressionCard 
                 key={impression.id}
                 sender={impression.from}
+                recipientNickname={person.nickname}
+                threeWords={(impression as any).threeWords}
                 message={impression.message}
+                hope={(impression as any).hope}
                 index={index}
               />
             ))}

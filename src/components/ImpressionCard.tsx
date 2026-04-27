@@ -4,7 +4,10 @@ import '../styles/components.css';
 
 interface ImpressionCardProps {
   sender: string;
+  recipientNickname: string;
+  threeWords?: string;
   message: string;
+  hope?: string;
   index: number;
 }
 
@@ -18,7 +21,7 @@ const PASTEL_COLORS = [
 
 const PREDEFINED_ROTATIONS = [-3, 1.5, -1, 2.5, -2, 1, -2.5, 3, -1.5, 2, -3, 1];
 
-const ImpressionCard: React.FC<ImpressionCardProps> = ({ sender, message, index }) => {
+const ImpressionCard: React.FC<ImpressionCardProps> = ({ sender, recipientNickname, threeWords, message, hope, index }) => {
   const color = PASTEL_COLORS[index % PASTEL_COLORS.length];
   const rotation = PREDEFINED_ROTATIONS[index % PREDEFINED_ROTATIONS.length];
 
@@ -29,13 +32,37 @@ const ImpressionCard: React.FC<ImpressionCardProps> = ({ sender, message, index 
       whileHover={{ 
         y: -6, 
         rotate: 0,
-        boxShadow: '6px 10px 20px rgba(0,0,0,0.12)',
-        zIndex: 10
+        scale: 1.05,
+        boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
+        zIndex: 50
       }}
       transition={{ duration: 0.25, ease: "easeOut" }}
     >
-      <p className="impression-sender">{sender}</p>
+      <div className="impression-top">
+        <p className="impression-sender">From: {sender}</p>
+        
+        {threeWords && (
+          <div className="impression-tags-container">
+            <p className="tags-label">{recipientNickname} itu</p>
+            <div className="impression-tags">
+              <span className="impression-tag">"</span>
+              {threeWords.split(',').map((word, i) => (
+                <span key={i} className="impression-tag-item impression-tag">{word.trim()}</span>
+              ))}
+              <span className="impression-tag">"</span>
+            </div>
+          </div>
+        )}
+      </div>
+      
       <p className="impression-message">{message}</p>
+      
+      {hope && (
+        <div className="impression-hope">
+          <p className="hope-label">Harapan:</p>
+          <p className="hope-text">"{hope}"</p>
+        </div>
+      )}
     </motion.div>
   );
 };
